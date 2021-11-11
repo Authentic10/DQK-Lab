@@ -13976,7 +13976,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We used the python programmaing language for this lab. We used existing libraries such as <a href="https://pandas.pydata.org/">pandas</a>, <a href="https://numpy.org/">numpy</a> and others to perform all the tasks. We wrote a small module called <strong><em>kyd</em></strong> which stands for "<strong>Know Your Data</strong>" with the libraries mentioned before to create specific methods related to our lab. The module code source can be found in the folder of this report.</p>
+<p>We used the python programming language for this lab. We used existing libraries such as <a href="https://pandas.pydata.org/">pandas</a>, <a href="https://numpy.org/">numpy</a> and others to perform all the tasks. We wrote a small module called <strong><em>kyd</em></strong> which stands for "<strong>Know Your Data</strong>" with the libraries mentioned before to create specific methods related to our lab. The module code source can be found in the folder of this report.</p>
 
 </div>
 </div>
@@ -13987,8 +13987,11 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We have used <strong><em>Fatal Encouters</em></strong> database for this lab\
-We are going to import the <strong>kyd</strong> module and read the dataset</p>
+<p>We have used <strong><em>Fatal Encouters</em></strong> database for this lab <br/>
+The Fatal Encounters database documents non-police deaths that occur when police are present or
+are precipitated by police action or presence. It documents all available records for all 50 states of USA,
+back to 2000. <br/></p>
+<p>We are going to import the <strong>kyd</strong> module and read the dataset</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14450,7 +14453,7 @@ dtype: object
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The <strong>object</strong> type is also a <strong>String</strong>. We will not use all the variables in the dataset. We will just focus on some of them so let's see the information about the variables.\
+<p>The <strong>object</strong> type is also a <strong>String</strong>. We will not use all the variables in the dataset. We will just focus on some of them so let's see the information about the variables.<br/>
 First, we are going to remove the variables that have more than 50% percent missing values</p>
 
 </div>
@@ -14654,7 +14657,7 @@ Max string length : 9.0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[248]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[282]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a safe copy of the dataset</span>
@@ -14710,7 +14713,7 @@ Max string length : 9.0
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We can see that there are other formats used for this variable. They all related to the age of person so we can conclude here by saying that there is no issue with this variable. The problem we may have is when trying to create have the average age of all the rows or perform other analyses. In this case, we are facing <strong>Data Consistency</strong> dimension quality</p>
+<p>We can see that there are other formats used for this variable. They all related to the age of person so we can conclude here by saying that there is no issue with this variable. The problem we may have is when trying to have the average age of all the dataset or perform other analyses. In this case, we are facing <strong>Data Consistency</strong> dimension quality</p>
 
 </div>
 </div>
@@ -15510,7 +15513,7 @@ Total : 8
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>These addresses are incomplete. The data quality dimension issue here is <strong>Accuracy</strong></p>
+<p>These addresses are incomplete. The data quality dimension issue here is <strong>Data Accuracy</strong></p>
 
 </div>
 </div>
@@ -15518,44 +15521,6 @@ Total : 8
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="Variable-%22Intentional-Use-of-Force-(Developing)%22">Variable "<strong>Intentional Use of Force (Developing)</strong>"<a class="anchor-link" href="#Variable-%22Intentional-Use-of-Force-(Developing)%22">&#182;</a></h4>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[137]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">importlib</span>
-<span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">kyd</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[137]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;module &#39;kyd&#39; from &#39;E:\\WorkFiles\\School\\DQK\\kyd.py&#39;&gt;</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -15878,7 +15843,7 @@ Max string length : 2.0
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>According to the statistics, we can conclude that all the values have a length of 2. That means the abbreviation is used instead of the actual values and this is hard to recognize some states because some abbreviations are not intuitive. This is a <strong>Data Accuracy</strong> quality dimension problem.</p>
+<p>According to the statistics, we can conclude that all the values have a length of 2. That means the abbreviation is used instead of the actual values and it is hard to recognize some states because some abbreviations are not intuitive. This is a <strong>Data Accuracy</strong> quality dimension problem.</p>
 
 </div>
 </div>
@@ -15895,7 +15860,7 @@ Max string length : 2.0
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We have identified three (3) data quality dimensions problems : <strong>Data Consistency</strong> with the "<em>Subject's age</em>" and "<em>Imputation probability</em>" variables, <strong>Data Accuracy</strong> with the "<em>Full Address</em>" and "<em>Location of death (state)</em>" variables and <strong>Data Completeness</strong> with the "<em>Subject's race</em>" variable and many others. We have looked for other data quality dimensions such as <strong>Data Uniqueness</strong> too but there are no duplicated persons in the dataset.</p>
+<p>We have identified three (3) data quality dimensions problems : <strong>Data Consistency</strong> with the "<em>Subject's age</em>" and "<em>Imputation probability</em>" variables, <strong>Data Accuracy</strong> with the "<em>Full Address</em>" and "<em>Location of death (state)</em>" variables and <strong>Data Completeness</strong> with the "<em>Subject's race</em>" variable and many others. We have looked for other data quality dimensions such as <strong>Data Uniqueness</strong> too but there are no duplicated subjects in the dataset.</p>
 
 </div>
 </div>
@@ -15937,7 +15902,7 @@ Max string length : 2.0
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Goal</strong> : Replace all the abbreviations with the real values <br/>
-<strong>Question</strong> : Which kind of formats are present in this variable ? <br/>
+<strong>Question</strong> : How many values are not accurate ? <br/>
 <strong>Quality factor</strong> : Precision <br/>
 <strong>Metric</strong> : Average length of the values</p>
 <p><strong>Quality Plan</strong> :</p>
@@ -15956,7 +15921,7 @@ Max string length : 2.0
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Goal</strong> : Replace the null values (Race unspecified) <br/>
-<strong>Question</strong> : Which kind of formats are present in this variable ? <br/>
+<strong>Question</strong> : How many values are missing for the subject's race ? <br/>
 <strong>Quality factor</strong> : Density <br/>
 <strong>Metric</strong> : Ratio of null values</p>
 <p><strong>Quality Plan</strong> :</p>
@@ -15974,7 +15939,7 @@ Max string length : 2.0
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In this section, we are going to implement one the quality plans presented above. We decided to implement the consistency problem with "<strong>Subject's age</strong>". The age must be in the interval [<strong>0-130</strong>]</p>
+<p>In this section, we are going to implement one of the quality plans presented above. We decided to implement the consistency problem with "<strong>Subject's age</strong>". The age must be in the interval [<strong>0-130</strong>]</p>
 
 </div>
 </div>
@@ -16095,7 +16060,7 @@ Max string length : 2.0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[249]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[283]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Specify the old value if it is not in the correct format</span>
@@ -16110,7 +16075,7 @@ Max string length : 2.0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[252]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Replace all the values in the incorrect format</span>
@@ -16141,7 +16106,7 @@ Max string length : 2.0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[253]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[285]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">kyd</span><span class="o">.</span><span class="n">print_info_variable</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="s2">&quot;Subject&#39;s age&quot;</span><span class="p">)</span>
@@ -16189,7 +16154,7 @@ Max string length : 5.0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[262]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[286]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ds</span><span class="p">[</span><span class="n">ds</span><span class="p">[</span><span class="s2">&quot;Subject&#39;s age&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">len</span><span class="p">()</span><span class="o">==</span><span class="mi">5</span><span class="p">][</span><span class="s2">&quot;Subject&#39;s age&quot;</span><span class="p">]</span>
@@ -16208,13 +16173,14 @@ Max string length : 5.0
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[262]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[286]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>Series([], Name: Subject&#39;s age, dtype: object)</pre>
+<pre>2358    46/53
+Name: Subject&#39;s age, dtype: object</pre>
 </div>
 
 </div>
@@ -16602,6 +16568,12 @@ Max : 97.0
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We were able to replace all the values with the wrong format in the subject's age field and we can now perform some statistical analysis on this variable. We also add a field that keeps the old value in case it will be needed for some analysis and we add another field to range the ages in intervals.</p>
+
+</div>
 </div>
 </body>
 
